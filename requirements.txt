@@ -1,0 +1,7 @@
+numpy
+cython
+spacy
+word2number
+pytz
+flask
+uwsgi

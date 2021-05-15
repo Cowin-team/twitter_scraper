@@ -1,0 +1,9 @@
+uwsgi:
+  http: 0.0.0.0:80
+  master: true
+  vacuum: true
+  wsgi-file: WSGI.py
+  callable: app
+  processes: 2
+  harakiri: 300
+  logto: /var/log/uwsgi/app.log
