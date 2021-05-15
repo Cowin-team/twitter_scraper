@@ -2,8 +2,7 @@
 
 ## Installation
 
-    pip3 install -r requirements.txt
-    python3 -m spacy download en_core_web_sm
+    bash install.sh 
 
 ## Running the script
 
@@ -11,7 +10,7 @@
 
       export BEARER_TOKEN="Bearer AAAAsfjlsdfljsldjssdfsddddddddddddddddddddddddddddfsjslfdjsljdlfsj"`
 
-- Run the python script
+- Run the API service
 
       cd src
-      python3 twitter_scraper.py
+      uwsgi --yaml app.yaml
